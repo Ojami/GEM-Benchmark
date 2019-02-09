@@ -1,0 +1,7 @@
+Note: sample GEMs for three algorithms CORDA, GIMME and iMAT are provided.
+
+Please follow the instructions below to prepare GEMs as be applicable to the benchmarking platform:
+1- Make folders for each algorithm with a "_Noisy" tag. For instance: CORDA_Noisy, GIMME_Noisy, etc.
+2- Put all GEMs generated with noisy data within each algorithm folder, named with "Noisy" tag. For instance, GEMs as: CORDANoisy1.mat,...CORDANoisy20.mat should be placed in the folder "CORDA_Noisy".
+3- Two functions use these GEMs, namely growthEval_noisy.m and ResPower_Noisy.m. Both of these assume these GEMs correspond to the noisy data used in current study (NoisyZscores.mat for FASTCORE, FASTCORMICS and CORDA, and Noisyset.mat for the rest). If you want to try different noisy data please modify the mentioned functions according to your noisy expression data.
+ 
