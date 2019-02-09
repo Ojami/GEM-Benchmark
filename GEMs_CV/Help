@@ -1,0 +1,7 @@
+Note: sample models for three algorithms CORDA, GIMME and iMAT are provided.
+
+Please follow the instructions below to prepare GEMs as be applicable to the benchmarking platform:
+1- Make folders for each algorithm with a "_CV" tag. For instance: CORDA_CV, GIMME_CV, etc.
+2- Put all GEMs generated with training sets within each algorithm folder, named with "CV" tag. For instance, GEMs as: CORDACV1.mat,...CORDACV75.mat should be placed in the folder "CORDA_CV".
+3- Two functions use these GEMs, namely growthEval_CV.m and CVanalyzer.m. Both these functions assume that GEMs are generated for 75 sets of test data. To change this, please modify the functions easily by changing the default number.
+4- Each algorithm which extracts a subnetwork (i.e, all except TRFBA and PRIME), should be accompanied with a mat file containing two variables:1- "core", which is a cell array of core reactions, and 2- "Testindx", which is a m*n matrix, with m corresponding to reaction id in the model and n corresponding to different test sets. These two variables should be saved as a mat file named (for instance): "CORDACV_metainfo.mat", and put in the algorithm folder (i.e. "CORDA_CV").
