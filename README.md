@@ -5,12 +5,12 @@
 - Download the files within 'GEM-Benchmark'.
 - Unzip the GEMs within subfolders.
 - Navigate to 'GEM-Benchmark' directory on your machine, and add the current directory to MATLAB search path:
-...
+```MATLAB
 >> addpath(genpath(pwd))
 >> savepath
-...
+```
 - To run the GUI:
-...
+```MATLAB
 >> BenchmarkPanel
-...
+```
 - Benchmark GUI will pop up.
